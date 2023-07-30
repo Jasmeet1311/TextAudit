@@ -44,8 +44,8 @@ function App() {
   <Alert alert={alert}/>
   {/* my-3 Margin in y axis */}
   <Routes>
-          <Route exact path="/about" element={<About mode={mode}/>}></Route>
-          <Route exact path="/" element={<Textform heading="Try TextUtils- Space Remover, Uppercase to Lowercase, Lowercase to Uppercase, Word Counter, Character Counter" mode={mode} showAlert={showAlert}/>}></Route>
+          <Route exact path="/about" element={<About mode={mode} active={"active"}/>}></Route>
+          <Route exact path="/" element={<Textform active={"active"} heading="Try TextUtils- Space Remover, Uppercase to Lowercase, Lowercase to Uppercase, Word Counter, Character Counter" mode={mode} showAlert={showAlert}/>}></Route>
   </Routes>
   </Router>
 </>
