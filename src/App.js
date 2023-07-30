@@ -4,8 +4,11 @@ import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import Alert from './components/Alert';
 import React, {useState} from 'react'
+import About from './components/About';
 
-// import About from './components/About';
+import {
+  BrowserRouter as Router,Routes,Route
+} from "react-router-dom";
 
 function App() {
   const [mode,SetMode]=useState('light');
@@ -36,13 +39,15 @@ function App() {
   // Writing JSX
   return (
 <>
+  <Router>
   <Navbar title={"TextUtils"} mode={mode} toggleMode={toggleMode}></Navbar>
   <Alert alert={alert}/>
   {/* my-3 Margin in y axis */}
-  <div className="container my-3"> 
-      <Textform heading="Enter Text To Analyze" mode={mode} showAlert={showAlert}/>
-  </div>
-  {/* <About/> */}
+  <Routes>
+          <Route exact path="/about" element={<About mode={mode}/>}></Route>
+          <Route exact path="/" element={<Textform heading="Try TextUtils- Space Remover, Uppercase to Lowercase, Lowercase to Uppercase, Word Counter, Character Counter" mode={mode} showAlert={showAlert}/>}></Route>
+  </Routes>
+  </Router>
 </>
   );
 }
