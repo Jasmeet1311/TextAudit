@@ -40,12 +40,12 @@ function App() {
   return (
 <>
   <Router>
-  <Navbar title={"TextUtils"} mode={mode} toggleMode={toggleMode}></Navbar>
+  <Navbar title={"TextAudit"} mode={mode} toggleMode={toggleMode}></Navbar>
   <Alert alert={alert}/>
   {/* my-3 Margin in y axis */}
   <Routes>
           <Route exact path="/about" element={<About mode={mode} active={"active"}/>}></Route>
-          <Route exact path="/" element={<Textform active={"active"} heading="Try TextUtils- Space Remover, Uppercase to Lowercase, Lowercase to Uppercase, Word Counter, Character Counter" mode={mode} showAlert={showAlert}/>}></Route>
+          <Route exact path="/" element={<Textform active={"active"} heading="Try TextAudit- Space Remover, Uppercase to Lowercase, Lowercase to Uppercase, Word Counter, Character Counter" mode={mode} showAlert={showAlert}/>}></Route>
   </Routes>
   </Router>
 </>

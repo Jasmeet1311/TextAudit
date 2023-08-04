@@ -53,7 +53,7 @@ export default function About(props) {
             className="accordion-collapse collapse show"
           >
             <div className="accordion-body"  style={mystyle}>
-            TextUtils gives you a way to analyze your text quickly and efficiently. TextUtils is designed to help you get more insights from your writing. Whether you are a student, a blogger, or a professional writer , our tools will help you improve your writing skills and optimize your content.
+            TextAudit gives you a way to analyze your text quickly and efficiently. TextUtils is designed to help you get more insights from your writing. Whether you are a student, a blogger, or a professional writer , our tools will help you improve your writing skills and optimize your content.
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function About(props) {
             className="accordion-collapse collapse"
           >
             <div className="accordion-body" style={mystyle}>
-            TextUtils is a free tool that provide instant character count and word count for a given text. TextUtils reports number of words and characters.
+            TextAudit is a free tool that provide instant character count and word count for a given text. TextUtils reports number of words and characters.
             </div>
           </div>
         </div>
